@@ -3,7 +3,7 @@
 **Slug:** `cuetrail`  
 **Tagline:** A day-by-day dog training plan shaped by your dog, home, and schedule.  
 **Local port:** `5103`  
-**Status:** Local prototype only — no deploy, no real payments.
+**Status:** Live. Payments processed by Gumroad (Monthly or Quarterly).
 
 ## Audience persona
 New puppy parents and frustrated dog owners who want a structured plan that fits apartment or house life.
@@ -33,11 +33,11 @@ Prefer flat geometric icons, soft corners matching `--radius`, no stock-photo pe
 ## Sample copy lines
 - Hero CTA: “Build my dog’s plan”
 - Honesty: “General education only — not a vet or behaviorist replacement. No outcome guarantees.”
-- Paywall: “Checkout coming soon: join founding list”
+- Paywall: “Start my plan” links to the Gumroad checkout URL.
 
 ## Do
-- Show intro **and** renewal prices.
-- Label founding list as no charge today.
+- Show Monthly and Quarterly prices, plus the renewal sentence, before checkout.
+- Save the customer’s email before sending them to Gumroad.
 - Keep disclaimers visible near plans.
 - Mobile-first quiz (one question per screen).
 
