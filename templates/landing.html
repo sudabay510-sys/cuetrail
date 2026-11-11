@@ -2,10 +2,9 @@
 {% block title %}{{ brand.name }} — {{ brand.tagline }}{% endblock %}
 {% block body_class %}page-landing{% endblock %}
 {% block content %}
-<section class="hero">
+<section class="hero ly-hero">
   <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">{{ brand.eyebrow }}</p>
+    <div class="hero-copy"><p class="eyebrow">{{ brand.eyebrow }}</p>
       <h1>{{ brand.hero_title }}</h1>
       <p class="lede">{{ brand.hero_lede }}</p>
       <div class="hero-actions">
@@ -13,15 +12,13 @@
         <a class="btn btn-lg btn-ghost" href="#how">See how it works</a>
       </div>
       <p class="tiny muted">{{ brand.honesty_line }}</p>
-    </div>
-    <div class="hero-card" aria-hidden="true">
-      <div class="card-label">Sample plan peek</div>
-      <ul class="peek-list">
-        {% for b in brand.sample_peek %}
-        <li><span class="dot"></span>{{ b }}</li>
-        {% endfor %}
-      </ul>
-      <div class="card-fade">Full plan unlocks after your quiz</div>
+      {% if brand.get('safety_note') %}
+<aside class="safety" role="note" aria-label="Safety note"><strong>{{ brand.safety_title or "Important" }}:</strong> {{ brand.safety_note }}</aside>
+{% endif %}</div>
+    <div class="ct-map" aria-label="Sample plan peek">
+      <p class="card-label">Sample plan peek · trail markers</p>
+      <ol class="ct-trail">{% for b in brand.sample_peek %}<li><span class="ct-mk">{{ loop.index }}</span><p>{{ b }}</p></li>{% endfor %}</ol>
+      <p class="card-fade">Full plan unlocks after your quiz</p>
     </div>
   </div>
 </section>
