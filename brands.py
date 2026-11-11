@@ -635,7 +635,7 @@ BRANDS = {
         "checkout_url": "https://solvfix.gumroad.com/l/ascykk",
         "disclaimer_short": "General education only. Not a vet/behaviorist. Seek professionals for aggression or medical issues. No outcome guarantees.",
         "disclaimer_long": "CueTrail provides general dog-training education and practice structures. It does not diagnose medical or behavioral disorders, guarantee training outcomes, or replace a veterinarian, certified trainer, or veterinary behaviorist. If your dog shows aggression, bite history, or pain, seek qualified in-person help. Payments are processed by Gumroad, not on this site.",
-        "font_url": "https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Nunito+Sans:wght@400;600;700&display=swap",
+        "font_url": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700;800&display=swap",
         "questions": CT_Q,
         "generate_plan": ct_plan,
         "secret_env": "CUETRAIL_SECRET",

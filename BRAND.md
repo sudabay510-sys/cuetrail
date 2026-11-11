@@ -65,3 +65,24 @@ Prefer flat geometric icons, soft corners matching `--radius`, no stock-photo pe
 
 ## Logo file
 `static/logo.svg`
+
+
+## Identity refresh (Nov 2026)
+
+Visual layer only (`static/identity.css`, `static/logo.svg`, Google Fonts URL). Quiz questions, plan generation, routes, pricing, checkout/unlock, and safety notes are unchanged.
+
+- **Concept:** Trail map adventure. Training as a walk you take together: a dotted trail, milestone markers, and a dog-tag result badge.
+- **Type:** Fredoka (display) / Nunito Sans (body)
+- **Voice:** A patient trainer friend at the park: short steps, small wins, and a straight answer when it’s time for a professional.
+- **Persona (design assumption, not research):** Priya, first-time puppy owner in an apartment (assumption): Brought home a 5-month-old mix. Leash walks are a tug-of-war and the neighbors notice.
+
+| Color | Hex |
+|---|---|
+| Trail cream | `#F7F4EA` |
+| Meadow | `#2F6B3F` |
+| Tennis ball | `#D7F05B` |
+| Sky | `#CDE7F0` |
+| Bark | `#6B4A2F` |
+| Forest ink | `#1F2A1E` |
+
+Full brand guide, persona, and journey: `quiz-to-plan-redesign/products/cuetrail/brand.html`.
