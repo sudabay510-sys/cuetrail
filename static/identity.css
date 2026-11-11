@@ -1,0 +1,32 @@
+/* CueTrail identity layer, Nov 2026 refresh: Trail map adventure. Loaded after brand.css; visual only. */
+:root{--bg:#F7F4EA;--bg-alt:#EDF1DE;--card:#FFFFFF;--ink:#1F2A1E;--muted:#4C5A48;--line:#E4DECB;--accent:#2F6B3F;--accent-2:#24552F;--on-accent:#FFFFFF;--hi:#D7F05B;--radius:22px;--focus:#1D5FA8;
+--font-display:'Fredoka', system-ui, sans-serif;--font-body:'Nunito Sans', system-ui, sans-serif;--tracking:-0.01em;--cta-band-bg:#2F6B3F;--cta-band-ink:#FFFFFF;--cta-band-btn:#D7F05B;--cta-band-btn-ink:#1F2A1E;
+--shadow-card:0 14px 34px rgba(0,0,0,.10);--shadow-btn:none}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink)}
+.skip:focus{background:var(--card);color:var(--ink);outline:3px solid var(--focus)}
+.btn:focus-visible,.choice:focus-within,a:focus-visible,.input:focus{outline:3px solid var(--focus);outline-offset:2px}
+.choice:has(input:checked){border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.choice input{accent-color:var(--accent);width:1.15rem;height:1.15rem;flex:none}
+.choice{min-height:3.25rem}
+.btn{min-height:2.75rem}
+.nav a.btn-primary,.nav a.btn-primary:hover{color:var(--on-accent)}
+.safety{border-left-width:6px;border-left-style:solid}
+@media (max-width:560px){.choice{padding:.9rem 1rem}.quiz-q{font-size:1.45rem}}
+
+.hero{background:radial-gradient(circle,rgba(47,107,63,.35) 2px,transparent 2.5px) 0 100%/22px 22px repeat-x,linear-gradient(180deg,#CDE7F0 0%,var(--bg) 70%)}
+h1,h2,h3{font-weight:600}
+.site-header{border-bottom:0;box-shadow:0 2px 0 var(--line)}
+.hero-card{border:0;box-shadow:0 14px 30px rgba(31,42,30,.12)}
+.hero-card::after{content:"";position:absolute;right:-18px;top:-18px;width:70px;height:70px;border-radius:50%;background:var(--hi);box-shadow:inset -8px -6px 0 rgba(31,42,30,.12)}
+.dot{background:var(--hi);border:2px solid var(--accent);width:.8rem;height:.8rem;margin-top:.35rem}
+.btn{border-radius:999px}
+.steps{position:relative}.steps li{border:0;box-shadow:0 1px 0 var(--line);border-left:4px dotted var(--accent)}
+.step-num,.journey-step{background:var(--hi);color:var(--ink);font-family:var(--font-display)}
+.choice{border-radius:18px;border-width:2px}
+.choice:has(input:checked){background:#F1F8E0}
+.progress{height:.7rem;background:repeating-linear-gradient(90deg,var(--line) 0 8px,transparent 8px 14px)}
+.progress-bar{background:var(--accent);border-radius:999px}
+.plan-section{border:0;box-shadow:0 8px 22px rgba(31,42,30,.08);position:relative;padding-left:3.25rem}
+.plan-section::before{content:"";position:absolute;left:1.1rem;top:1.35rem;width:1.3rem;height:1.6rem;border-radius:50% 50% 45% 45%;background:var(--hi);border:2px solid var(--accent)}
+.lock-banner{background:linear-gradient(135deg,#CDE7F0,var(--card));border:0}
+.safety{background:#FFF6E5;border-color:#6B4A2F;border-left-color:#6B4A2F}
