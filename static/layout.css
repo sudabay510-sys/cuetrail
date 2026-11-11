@@ -1,0 +1,20 @@
+/* cuetrail layout compositions (phase 2). Loaded after identity.css. */
+.ct-map{background:var(--card);border-radius:24px;padding:1.5rem;box-shadow:0 14px 30px rgba(31,42,30,.12);position:relative}
+.ct-trail{list-style:none;padding:0;margin:0;position:relative}
+.ct-trail::before{content:"";position:absolute;left:1.05rem;top:.6rem;bottom:.6rem;border-left:4px dotted var(--accent)}
+.ct-trail li{display:flex;gap:.9rem;align-items:flex-start;padding:.55rem 0;position:relative}
+.ct-trail p{margin:.3rem 0 0;font-weight:600}
+.ct-mk{flex:none;display:grid;place-items:center;width:2.3rem;height:2.3rem;border-radius:50%;background:var(--hi);border:3px solid var(--accent);font:600 1rem var(--font-display);color:var(--ink);position:relative;z-index:1}
+.ct-q{font:600 1rem var(--font-display);color:var(--accent);margin:0 0 .4rem}
+.q-dots{list-style:none;display:flex;gap:.35rem;padding:0;margin:0 0 .6rem}
+.q-dots li{flex:1;height:.55rem;border-radius:999px;background:var(--line)}
+.q-dots li.on{background:var(--accent)}.q-dots li.now{background:var(--hi);outline:2px solid var(--accent)}
+.page-quiz .progress{display:none}.page-quiz .tiny.muted{display:none}
+.ct-head{display:grid;grid-template-columns:auto 1fr;gap:1.5rem;align-items:center;margin-bottom:1.5rem}
+.ct-tag{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 50% 14%,var(--bg) 9px,transparent 10px),linear-gradient(145deg,#E8EFC7,#B9C98A);border:4px solid var(--accent);display:grid;place-items:center;transform:rotate(-8deg);box-shadow:0 10px 20px rgba(31,42,30,.18)}
+.ct-tag span{font:700 1.05rem var(--font-display);color:var(--ink);margin-top:1rem}
+.page-results .plan-preview,.page-results .plan-full{position:relative}
+.ct-stop{padding-left:4rem!important}
+.ct-stop::before{display:none}
+.ct-stop>.ct-mk{position:absolute;left:1rem;top:1.1rem}
+@media (max-width:560px){.ct-head{grid-template-columns:1fr}.ct-tag{width:90px;height:90px}}
